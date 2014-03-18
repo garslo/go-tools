@@ -11,7 +11,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&usage, "usage", false, "Display usage")
+	flag.BoolVar(&usage, "usage", false, "Display usage")
 }
 
 func dieIf(err error) {
